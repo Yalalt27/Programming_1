@@ -115,15 +115,7 @@ def gameLoop():
         draw_snake(snake_block, snake_list)
         score(length - 1)
 
-        pygame.display.update()
-
-        # Хоол идэх
-        if x == food_x and y == food_y:
-            food_x = round(random.randrange(0, width - snake_block) / 10.0) * 10.0
-            food_y = round(random.randrange(0, height - snake_block) / 10.0) * 10.0
-            length += 1
-
-        clock.tick(snake_speed)
+        
 
     pygame.quit()
     quit()
